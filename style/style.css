@@ -17,7 +17,7 @@
   background-color: #eee;
 }
 
-.search-bar {
+.search-bar, .title {
   margin: 20px;
   text-align: center;
 }

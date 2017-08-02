@@ -18,7 +18,7 @@ class App extends Component {
       chosenVideo: null
     };
 
-    this.videoSearch('surfboards');
+    this.videoSearch('Einaudi');
   }
 
   videoSearch(term) {
@@ -36,6 +36,8 @@ class App extends Component {
 
     return (
       <div>
+        <h1 className="title">REACT-TUBE</h1>
+        <h2 className="title">The ReactJS video-clip searcher</h2>
         <SearchBar onSearchTermChange={videoSearch} />
         <VideoInfo video={this.state.chosenVideo} />
         <VideoList
