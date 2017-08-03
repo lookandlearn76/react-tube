@@ -18,6 +18,5 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'index.html'))
 })
 
-app.listen(PORT, function(){
+app.listen(PORT);
   console.log('express server is up and running on port ' + PORT);
-});
