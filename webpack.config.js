@@ -13,9 +13,8 @@ module.exports = {
       loader: 'babel-loader',
       query: {
         presets: ['react', 'es2015', 'stage-1']
-
       }
-    ]
+    }]
   },
 
   resolve: {
