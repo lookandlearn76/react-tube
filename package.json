@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Youtube clone made with ReactJS and Redux",
   "main": "index.js",
+  "homepage": "https://lookandlearn76.github.io/react-tube/",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
   },
