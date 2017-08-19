@@ -2,14 +2,15 @@
   "name": "react-tube",
   "version": "1.0.0",
   "engines": {
-    "node": "6.9.4"  
+    "node": "6.9.4",
+    "npm": "3.10.10"
   },
   "description": "Youtube clone made with ReactJS and Redux",
   "main": "index.js",
   "homepage": "https://lookandlearn76.github.io/react-tube/",
   "scripts": {
     "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "postinstall": "webpack-p",
+    "postinstall": "webpack -p",
     "start": "node server.js"
   },
   "author": "",
