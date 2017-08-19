@@ -1,7 +1,5 @@
 npm-debug.log
 .DS_Store
-node_modules
-bundle.js
 # IntelliJ
 *.iml
 /.idea

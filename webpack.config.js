@@ -5,7 +5,7 @@ module.exports = {
   output: {
     path: __dirname,
   //  publicPath: "/",
-    filename: "./public/bundle.js"
+    filename: "bundle.js"
   },
   module: {
     loaders: [{
@@ -21,7 +21,7 @@ module.exports = {
     extensions: ['', '.js', '.jsx']
   },
   devServer: {
-  //  historyApiFallback: true,
+    historyApiFallback: true,
     contentBase: './'
   }
 };
