@@ -1,6 +1,9 @@
 {
   "name": "react-tube",
   "version": "1.0.0",
+  "engines": {
+    "node": "6.9.4"  
+  },
   "description": "Youtube clone made with ReactJS and Redux",
   "main": "index.js",
   "homepage": "https://lookandlearn76.github.io/react-tube/",
