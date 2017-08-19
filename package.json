@@ -5,8 +5,9 @@
   "main": "index.js",
   "homepage": "https://lookandlearn76.github.io/react-tube/",
   "scripts": {
-    "start": "node server.js",
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "postinstall": "webpack-p",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
