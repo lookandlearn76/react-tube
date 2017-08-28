@@ -11,14 +11,17 @@ module.exports = {
     filename: "bundle.js"
   },
   module: {
-    loaders: [{
-      exclude: /node_modules/,
+  loaders: [
+    {
       loader: 'babel-loader',
       query: {
-        presets: ['react', 'es2015', 'stage-1']
-      }
-    }]
-  },
+        presets: ['react', 'es2015', 'stage-0']
+      },
+      test: /\.jsx?$/,
+      exclude: /(node_modules|bower_components)/
+    }
+  ]
+},
 
   resolve: {
     extensions: ['', '.js', '.jsx']
