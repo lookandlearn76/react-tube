@@ -5,8 +5,9 @@ import YTSearch from 'youtube-api-search';
 import SearchBar from './components/search';
 import VideoList from './components/videoList';
 import VideoInfo from './components/videoInfo';
+const keys = require('./config/keys')
 
-const API_KEY = 'AIzaSyDicbu-cuTqhkus8eATLtZPH2zAnJuI5BQ';
+
 //.... texting the data with an ajax request......
 // YTSearch({key: API_KEY, term: 'einaudi'}, //function(data){
 //   console.log(data);
@@ -25,7 +26,7 @@ class App extends Component {
   }
 
   videoSearch(term) {
-    YTSearch({key: API_KEY, term: term }, videos => {
+    YTSearch({key: keys.API_KEY, term: term }, videos => {
       this.setState({
         videos: videos,
         chosenVideo: videos[0]
@@ -34,7 +35,9 @@ class App extends Component {
   }
 
   render() {
-    const videoSearch = _.debounce((term) => {this.videoSearch(term); }, 400);
+    const videoSearch = _.debounce(term => {
+      this.videoSearch(term);
+     }, 400);
 
     return (
       <div>
